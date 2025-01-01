@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Bookmark New Tab",
+    "version": "1.0.0",
+    "description": "Display bookmarks in new tab",
+    "permissions": ["bookmarks"],
+    "chrome_url_overrides": {
+        "newtab": "newtab/newtab.html"
+    },
+    "icons": {
+        "16": "icons/icon.svg",
+        "48": "icons/icon.svg",
+        "128": "icons/icon.svg"
+    }
+}

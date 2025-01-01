@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="popup.css" />
+        <title>Network Monitor</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Network Requests</h1>
+                <div class="controls">
+                    <button id="clear-btn" class="clear-button">Clear</button>
+                    <input type="text" id="filter-input" placeholder="Filter requests..." />
+                </div>
+            </div>
+            <div class="requests-container">
+                <div id="requests-list" class="requests-list">
+                    <!-- Requests will be inserted here -->
+                </div>
+            </div>
+            <div id="request-details" class="request-details">
+                <!-- Request details will be shown here -->
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>

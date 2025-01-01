@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="panel.css" />
+        <title>Cookie Inspector</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Cookies</h1>
+                <div class="controls">
+                    <button id="refresh-btn" class="refresh-button">Refresh</button>
+                    <input type="text" id="filter-input" placeholder="Filter cookies..." />
+                </div>
+            </div>
+            <div class="cookies-container">
+                <table id="cookies-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Value</th>
+                            <th>Domain</th>
+                            <th>Path</th>
+                            <th>Expires</th>
+                            <th>Size</th>
+                            <th>HttpOnly</th>
+                            <th>Secure</th>
+                            <th>SameSite</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cookies-list">
+                        <!-- Cookies will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="panel.js"></script>
+    </body>
+</html>

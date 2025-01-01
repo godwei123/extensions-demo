@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <rect x="14" y="14" width="100" height="100" rx="20" fill="#61DAFB"/>
+    <circle cx="64" cy="64" r="10" fill="white"/>
+    <path d="M64 32C48 32 24 48 24 64s24 32 40 32 40-16 40-32S80 32 64 32z" 
+          stroke="white" 
+          stroke-width="6" 
+          fill="none"/>
+    <path d="M64 32C80 32 104 48 104 64s-24 32-40 32S24 80 24 64s24-32 40-32z" 
+          stroke="white" 
+          stroke-width="6" 
+          fill="none"/>
+</svg> 

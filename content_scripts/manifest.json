@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Vue to React",
+    "version": "1.0.0",
+    "description": "Replace 'Vue' with 'React' on vuejs.org",
+    "permissions": ["scripting"],
+    "host_permissions": ["https://cn.vuejs.org/*"],
+    "content_scripts": [
+        {
+            "matches": ["https://cn.vuejs.org/*"],
+            "js": ["scripts/replace.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "16": "icons/icon.svg",
+        "48": "icons/icon.svg",
+        "128": "icons/icon.svg"
+    }
+}
