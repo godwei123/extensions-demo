@@ -3,8 +3,8 @@
     "name": "Network Monitor",
     "version": "1.0.0",
     "description": "Monitor network requests for Vue.js website",
-    "permissions": ["webRequest", "storage"],
-    "host_permissions": ["https://cn.vuejs.org/*"],
+    "permissions": ["webRequest", "storage", "declarativeNetRequest"],
+    "host_permissions": ["https://*.bilibili.com/*"],
     "background": {
         "service_worker": "background/background.js"
     },

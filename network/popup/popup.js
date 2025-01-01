@@ -111,6 +111,19 @@ class NetworkViewer {
             </div>
             
             ${
+                request.responseBody
+                    ? `
+                <div class="detail-section">
+                    <h3>Response</h3>
+                    <div class="detail-content response-body">
+                        ${this.formatResponse(request.responseBody)}
+                    </div>
+                </div>
+            `
+                    : ''
+            }
+            
+            ${
                 request.error
                     ? `
                 <div class="detail-section">
@@ -144,6 +157,22 @@ class NetworkViewer {
             default:
                 return 'status-pending';
         }
+    }
+
+    formatResponse(response) {
+        if (typeof response === 'object') {
+            return `<pre>${this.escapeHtml(JSON.stringify(response, null, 2))}</pre>`;
+        }
+        return `<pre>${this.escapeHtml(response)}</pre>`;
+    }
+
+    escapeHtml(html) {
+        return html
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
     }
 }
 
